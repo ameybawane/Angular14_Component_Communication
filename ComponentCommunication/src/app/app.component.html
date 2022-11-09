@@ -1,0 +1,8 @@
+<div class="parentCompo">
+  <h1>Parent Component</h1>
+  <div>
+    {{childData}}
+  </div>
+  <br>
+  <app-app-child [pString]="parentString" (childString)="parentMethod($event)"></app-app-child>
+</div>
